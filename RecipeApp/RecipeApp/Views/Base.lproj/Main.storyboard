@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Rb0-UD-PK9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WdN-87-AhN">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -10,7 +10,7 @@
         <!--My Ingredients Root View Controller-->
         <scene sceneID="Oav-e9-h1O">
             <objects>
-                <tableViewController id="ViE-9z-TWv" userLabel="My Ingredients Root View Controller" customClass="MyIngredientsTableViewController" customModule="RecipeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ViE-9z-TWv" userLabel="My Ingredients Root View Controller" customClass="MyIngredientsTableViewController" customModule="Lets_Stay_In_Tonight" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="jwt-fD-llF" customClass="MyIngredientsTable">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -103,7 +103,7 @@
         <!--Recipe Search Collection View Controller-->
         <scene sceneID="ggY-Tb-PVM">
             <objects>
-                <collectionViewController id="sC3-Vt-M4M" userLabel="Recipe Search Collection View Controller" customClass="RecipeSearchCollectionViewController" customModule="RecipeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <collectionViewController id="sC3-Vt-M4M" userLabel="Recipe Search Collection View Controller" customClass="RecipeSearchCollectionViewController" customModule="Lets_Stay_In_Tonight" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="jyz-W2-Ngp">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,7 +134,7 @@
                             </constraints>
                         </view>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipePhotoCell" id="z2L-0j-uCe" customClass="RecipePhotoCell" customModule="RecipeApp" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RecipePhotoCell" id="z2L-0j-uCe" customClass="RecipePhotoCell" customModule="Lets_Stay_In_Tonight" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" insetsLayoutMarginsFromSafeArea="NO" id="xGF-pR-bDv">
@@ -204,7 +204,7 @@
         <!--Full Recipe Table View Controller-->
         <scene sceneID="pv1-qm-3TB">
             <objects>
-                <tableViewController id="kOB-Ds-qSL" customClass="FullRecipeTableViewController" customModule="RecipeApp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="kOB-Ds-qSL" customClass="FullRecipeTableViewController" customModule="Lets_Stay_In_Tonight" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TQw-qU-Ysd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -267,7 +267,9 @@
         <scene sceneID="rx1-4C-hah">
             <objects>
                 <navigationController id="Rb0-UD-PK9" userLabel="Search" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="" image="Fridge" id="glJ-yt-fDh"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" selectedImage="magnifyingglass" id="glJ-yt-fDh">
+                        <color key="badgeColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KmN-HP-3Sc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -280,9 +282,104 @@
             </objects>
             <point key="canvasLocation" x="319" y="42"/>
         </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="rJD-sl-Qcg">
+            <objects>
+                <tabBarController id="WdN-87-AhN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dvf-qh-MaS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Rb0-UD-PK9" kind="relationship" relationship="viewControllers" id="2ii-E0-B5Z"/>
+                        <segue destination="nZp-bh-Rxf" kind="relationship" relationship="viewControllers" id="zIr-k8-Niq"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZU-yI-Ddq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="896" y="-671"/>
+        </scene>
+        <!--Spice Rack-->
+        <scene sceneID="Q2A-4d-2w2">
+            <objects>
+                <navigationController id="nZp-bh-Rxf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Spice Rack" image="checkmark.rectangle" catalog="system" selectedImage="checkmark.rectangle" id="lF3-tK-w95">
+                        <color key="badgeColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aZz-RQ-o99">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lQJ-9O-ILy" kind="relationship" relationship="rootViewController" id="CnH-Bp-jpl"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CSh-ca-XPx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1375" y="42"/>
+        </scene>
+        <!--Spice View Controller-->
+        <scene sceneID="E6H-Pz-QR7">
+            <objects>
+                <tableViewController id="lQJ-9O-ILy" customClass="SpiceViewController" customModule="Lets_Stay_In_Tonight" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sGM-4p-sph">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell_task" textLabel="VZE-4K-BDB" detailTextLabel="2hn-cn-89h" rowHeight="70" style="IBUITableViewCellStyleSubtitle" id="3dI-bo-Pup" customClass="SpiceCell" customModule="Lets_Stay_In_Tonight" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="70"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3dI-bo-Pup" id="MTB-qR-vWc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="VZE-4K-BDB">
+                                            <rect key="frame" x="20" y="14" width="45" height="21.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2hn-cn-89h">
+                                            <rect key="frame" x="20" y="38.5" width="44" height="14.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="spiceSubtitle" destination="2hn-cn-89h" id="MgW-px-f0f"/>
+                                    <outlet property="spiceTitle" destination="VZE-4K-BDB" id="0eN-uG-Zgh"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lQJ-9O-ILy" id="d4y-6Q-LtT"/>
+                            <outlet property="delegate" destination="lQJ-9O-ILy" id="JYr-Tk-eWz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="zPz-F4-M7i">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3rP-ml-43Y">
+                            <connections>
+                                <action selector="onAddClick:" destination="lQJ-9O-ILy" id="gxz-mB-tv6"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Akc-sT-hPJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1374" y="765"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="Fridge" width="37.5" height="37.5"/>
         <image name="Photo_1598650570648" width="1024" height="1024"/>
+        <image name="checkmark.rectangle" catalog="system" width="128" height="93"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
     </resources>
 </document>

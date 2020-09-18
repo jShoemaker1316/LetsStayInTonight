@@ -18,6 +18,11 @@
 		101BF9D924EC72730066C70B /* MyIngredientsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101BF9D824EC72730066C70B /* MyIngredientsTableViewController.swift */; };
 		1036AA9724F99B26001DAA56 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1036AA9624F99B26001DAA56 /* Launch Screen.storyboard */; };
 		103B397824F035F100963059 /* FullRecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103B397724F035F000963059 /* FullRecipeTableViewController.swift */; };
+		104A44382512B54E0022BCEB /* RecipeApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 104A44362512B54E0022BCEB /* RecipeApp.xcdatamodeld */; };
+		104A447B2515275E0022BCEB /* SpiceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A447A2515275E0022BCEB /* SpiceController.swift */; };
+		104A447D251528700022BCEB /* SpiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A447C251528700022BCEB /* SpiceViewController.swift */; };
+		104A447F251528870022BCEB /* SpiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A447E251528870022BCEB /* SpiceCell.swift */; };
+		104A4481251528F00022BCEB /* Spice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104A4480251528F00022BCEB /* Spice.swift */; };
 		104EACF224EF0F7A00D3031E /* RecipeSearchCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104EACF124EF0F7A00D3031E /* RecipeSearchCollectionViewController.swift */; };
 		104EACF424EF15D600D3031E /* RecipePhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104EACF324EF15D600D3031E /* RecipePhotoCell.swift */; };
 		106EB46524F3612300EC937F /* RecipeInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106EB46324F3612300EC937F /* RecipeInfoTableViewCell.swift */; };
@@ -39,6 +44,11 @@
 		101BF9D824EC72730066C70B /* MyIngredientsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyIngredientsTableViewController.swift; sourceTree = "<group>"; };
 		1036AA9624F99B26001DAA56 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		103B397724F035F000963059 /* FullRecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullRecipeTableViewController.swift; sourceTree = "<group>"; };
+		104A44372512B54E0022BCEB /* RecipeApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RecipeApp.xcdatamodel; sourceTree = "<group>"; };
+		104A447A2515275E0022BCEB /* SpiceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceController.swift; sourceTree = "<group>"; };
+		104A447C251528700022BCEB /* SpiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceViewController.swift; sourceTree = "<group>"; };
+		104A447E251528870022BCEB /* SpiceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpiceCell.swift; sourceTree = "<group>"; };
+		104A4480251528F00022BCEB /* Spice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spice.swift; sourceTree = "<group>"; };
 		104EACF124EF0F7A00D3031E /* RecipeSearchCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearchCollectionViewController.swift; sourceTree = "<group>"; };
 		104EACF324EF15D600D3031E /* RecipePhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipePhotoCell.swift; sourceTree = "<group>"; };
 		106EB46324F3612300EC937F /* RecipeInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeInfoTableViewCell.swift; sourceTree = "<group>"; };
@@ -81,6 +91,7 @@
 		101BF9B824EC36DC0066C70B /* RecipeApp */ = {
 			isa = PBXGroup;
 			children = (
+				104A4479251525C10022BCEB /* SpiceRack */,
 				1036AA9524F99AED001DAA56 /* Views */,
 				101BF9D124EC55300066C70B /* Structs */,
 				101BF9D024EC551E0066C70B /* ViewControllers */,
@@ -131,6 +142,18 @@
 				106EB46424F3612300EC937F /* RecipeInfoCell.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		104A4479251525C10022BCEB /* SpiceRack */ = {
+			isa = PBXGroup;
+			children = (
+				104A44362512B54E0022BCEB /* RecipeApp.xcdatamodeld */,
+				104A447A2515275E0022BCEB /* SpiceController.swift */,
+				104A447C251528700022BCEB /* SpiceViewController.swift */,
+				104A447E251528870022BCEB /* SpiceCell.swift */,
+				104A4480251528F00022BCEB /* Spice.swift */,
+			);
+			path = SpiceRack;
 			sourceTree = "<group>";
 		};
 		8DA488F5A304FF979680E792 /* Pods */ = {
@@ -269,14 +292,19 @@
 				101BF9D724EC56F80066C70B /* RecipeStruct.swift in Sources */,
 				101BF9CF24EC4CF70066C70B /* SpoonacularClient.swift in Sources */,
 				101BF9D924EC72730066C70B /* MyIngredientsTableViewController.swift in Sources */,
+				104A447D251528700022BCEB /* SpiceViewController.swift in Sources */,
+				104A44382512B54E0022BCEB /* RecipeApp.xcdatamodeld in Sources */,
 				103B397824F035F100963059 /* FullRecipeTableViewController.swift in Sources */,
+				104A447F251528870022BCEB /* SpiceCell.swift in Sources */,
 				101BF9D524EC56D40066C70B /* PhotoStruct.swift in Sources */,
 				101BF9D324EC56A40066C70B /* ErrorStruct.swift in Sources */,
 				106EB46524F3612300EC937F /* RecipeInfoTableViewCell.swift in Sources */,
+				104A4481251528F00022BCEB /* Spice.swift in Sources */,
 				104EACF424EF15D600D3031E /* RecipePhotoCell.swift in Sources */,
 				101BF9BA24EC36DC0066C70B /* AppDelegate.swift in Sources */,
 				101BF9BC24EC36DC0066C70B /* SceneDelegate.swift in Sources */,
 				104EACF224EF0F7A00D3031E /* RecipeSearchCollectionViewController.swift in Sources */,
+				104A447B2515275E0022BCEB /* SpiceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +496,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		104A44362512B54E0022BCEB /* RecipeApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				104A44372512B54E0022BCEB /* RecipeApp.xcdatamodel */,
+			);
+			currentVersion = 104A44372512B54E0022BCEB /* RecipeApp.xcdatamodel */;
+			path = RecipeApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 101BF9AE24EC36DC0066C70B /* Project object */;
 }
