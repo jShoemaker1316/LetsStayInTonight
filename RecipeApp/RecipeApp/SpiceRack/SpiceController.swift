@@ -62,12 +62,12 @@ public class SpiceController{
 
             do{
                 try managedContext.save()
-                print("Task update Successful")
+                print("Spice update Successful")
             }catch{
-                print("Task update unsuccessful")
+                print("Spice update unsuccessful")
             }
         }catch{
-            print("Task update unsuccessful")
+            print("Spice update unsuccessful")
         }
 
     }
@@ -92,12 +92,12 @@ public class SpiceController{
 
             do{
                 try managedContext.save()
-                print("Task update Successful")
+                print("Spice update Successful")
             }catch{
-                print("Task update unsuccessful")
+                print("Spice update unsuccessful")
             }
         }catch{
-            print("Task update unsuccessful")
+            print("Spice update unsuccessful")
         }
 
     }

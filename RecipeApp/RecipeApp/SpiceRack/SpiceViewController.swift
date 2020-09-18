@@ -16,7 +16,7 @@ class SpiceViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.title = "Spice Rack"
+        self.title = "The Spice Rack"
         self.fetchAllSpice()
         self.setupLongPressGesture()
     }
