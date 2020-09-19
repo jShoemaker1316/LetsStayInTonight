@@ -121,9 +121,9 @@ public class SpiceController{
 
             do{
                 try managedContext.save()
-                print("Task delete Successful")
+                print("Spice delete Successful")
             }catch{
-                print("Task delete unsuccessful")
+                print("Spice delete unsuccessful")
             }
 
         }catch{
